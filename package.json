@@ -9,6 +9,7 @@
   "author": "Marc Altmann <mail@marcaltmann.com>",
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "^2.12.3",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-sass": "^2.3.1"
   }
