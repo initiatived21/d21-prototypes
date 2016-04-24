@@ -18,7 +18,7 @@ gulp.task('sass', function() {
 
 gulp.task('html', function() {
   return gulp
-    .src('index.html')
+    .src('html/*.html')
     .pipe(gulp.dest('dist'));
 });
 
@@ -38,7 +38,8 @@ gulp.task('default',
     'serve',
     function watch(done) {
       gulp.watch('sass/*.scss', gulp.parallel('sass'));
-      gulp.watch('dist/**/*', browserSync.reload);
+      gulp.watch('html/*.html', gulp.parallel('html'));
+      gulp.watch('dist/*', browserSync.reload);
       done();
     }
   )
