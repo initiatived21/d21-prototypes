@@ -2,6 +2,10 @@
   "name": "d21-prototypes",
   "version": "1.0.0",
   "description": "Prototypes for D21 project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/d21/d21-prototypes.git"
+  },
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
