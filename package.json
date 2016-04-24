@@ -1,0 +1,15 @@
+{
+  "name": "d21-prototypes",
+  "version": "1.0.0",
+  "description": "Prototypes for D21 project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marc Altmann <mail@marcaltmann.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-sass": "^2.3.1"
+  }
+}
