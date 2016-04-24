@@ -1,8 +1,13 @@
 var
   gulp        = require('gulp'),
+  del         = require('del'),
   sass        = require('gulp-sass'),
   browserSync = require('browser-sync')
 ;
+
+gulp.task('clean', function() {
+  return del('dist');
+});
 
 gulp.task('sass', function() {
   return gulp
@@ -28,9 +33,10 @@ gulp.task('serve', function(done) {
 
 gulp.task('default',
   gulp.series(
+    'clean',
     gulp.parallel('sass', 'html'),
     'serve',
-    function watcher(done) {
+    function watch(done) {
       gulp.watch('sass/*.scss', gulp.parallel('sass'));
       gulp.watch('dist/**/*', browserSync.reload);
       done();
