@@ -11,7 +11,7 @@ gulp.task('clean', function() {
 
 gulp.task('sass', function() {
   return gulp
-    .src('sass/main.scss')
+    .src('style.scss')
     .pipe(sass())
     .pipe(gulp.dest('dist'));
 });
