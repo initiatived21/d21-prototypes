@@ -2,3 +2,29 @@
 .c-pledge {
   border: 1px solid $text-color;
 }
+
+.c-pledge__initiator-title {
+  text-transform: uppercase;
+}
+
+.c-pledge__initiator-name {
+  text-transform: uppercase;
+}
+
+.c-pledge__text {
+  color: $gray;
+  font-weight: bold;
+
+  &:before {
+    content: open-quote;
+  }
+
+  &:after {
+    content: close-quote;
+  }
+}
+
+.c-pledge__days {
+  color: #c00;
+  @include font-size(20px);
+}

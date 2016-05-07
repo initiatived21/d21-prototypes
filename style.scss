@@ -78,6 +78,8 @@
 \*------------------------------------*/
 
 //@import "node_modules/aleut.objects.block/_objects.block.scss";
+
+$o-box--small: true;
 @import "node_modules/aleut.objects.box/_objects.box.scss";
 //@import "node_modules/aleut.objects.buttons/_objects.buttons.scss";
 //@import "node_modules/aleut.objects.flag/_objects.flag.scss";
@@ -124,7 +126,9 @@ $o-layout--auto:     false !default;
 
 @import "scss/components/_components.site-nav.scss";
 @import "scss/components/_components.footer.scss";
+@import "scss/components/_components.tag-list.scss";
 @import "scss/components/_components.pledge.scss";
+
 
 //@import "scss/components/_components.header.scss";
 //@import "scss/components/_components.hero.scss";

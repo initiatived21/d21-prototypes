@@ -614,6 +614,12 @@ h6 {
   .o-box > :last-child {
     margin-bottom: 0; }
 
+/**
+     * Small box.
+     */
+.o-box--small {
+  padding: 12px; }
+
 /*------------------------------------*    #LAYOUT
 \*------------------------------------*/
 /**
@@ -737,8 +743,41 @@ h6 {
 .c-footer > .o-wrapper {
   background-color: #767676; }
 
+.c-tag-list__item {
+  background-color: #082; }
+
+.c-tag-list__link {
+  color: #fff;
+  display: inline-block;
+  font-size: 10px;
+  font-size: 0.625rem;
+  line-height: 2.4;
+  font-weight: normal;
+  padding: 1.5px 6px;
+  text-decoration: none; }
+
 .c-pledge {
   border: 1px solid #333; }
+
+.c-pledge__initiator-title {
+  text-transform: uppercase; }
+
+.c-pledge__initiator-name {
+  text-transform: uppercase; }
+
+.c-pledge__text {
+  color: #767676;
+  font-weight: bold; }
+  .c-pledge__text:before {
+    content: open-quote; }
+  .c-pledge__text:after {
+    content: close-quote; }
+
+.c-pledge__days {
+  color: #c00;
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2; }
 
 /*------------------------------------*    #Utilities (u-prefix)
     High-specificity, very explicit selectors. Overrides and helper classes (e.g. .u-hidden {})

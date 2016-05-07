@@ -1,0 +1,16 @@
+
+.c-tag-list {
+}
+
+.c-tag-list__item {
+  background-color: #082;
+}
+
+.c-tag-list__link {
+  color: #fff;
+  display: inline-block;
+  @include font-size(10px);
+  font-weight: normal;
+  padding: 1.5px $spacing--tiny;
+  text-decoration: none;
+}
