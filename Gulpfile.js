@@ -43,7 +43,7 @@ gulp.task('default',
     gulp.parallel('sass', 'html', 'images'),
     'serve',
     function watch(done) {
-      gulp.watch('sass/*.scss',  gulp.parallel('sass'));
+      gulp.watch('scss/**/*.scss',  gulp.parallel('sass'));
       gulp.watch('html/*.html',  gulp.parallel('html'));
       gulp.watch('images/*.png', gulp.parallel('images'));
       gulp.watch('dist/*', browserSync.reload);
