@@ -595,6 +595,25 @@ h6 {
     on variables or get new ones from here:
     https://github.com/aleutcss?query=objects.
 \*------------------------------------*/
+/*------------------------------------*    #BOX
+\*------------------------------------*/
+/**
+ * The box object simply boxes off content.
+ */
+/**
+ * 1. So we can apply the `.box` class to naturally-inline elements.
+ */
+.o-box {
+  display: block;
+  /* [1] */
+  padding: 24px; }
+  .o-box::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .o-box > :last-child {
+    margin-bottom: 0; }
+
 /*------------------------------------*    #LAYOUT
 \*------------------------------------*/
 /**
@@ -665,6 +684,32 @@ h6 {
   .o-list-inline > li {
     display: inline-block; }
 
+/*------------------------------------*    #MEDIA
+\*------------------------------------*/
+/**
+ * Place any image- and text-like content side-by-side, as per:
+ * stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code
+ */
+.o-media {
+  display: block; }
+  .o-media::after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.o-media__img {
+  float: left;
+  margin-right: 24px; }
+  .o-media__img > img {
+    display: block; }
+
+.o-media__body {
+  overflow: hidden;
+  display: block; }
+  .o-media__body,
+  .o-media__body > :last-child {
+    margin-bottom: 0; }
+
 .o-wrapper {
   margin: 0 auto;
   max-width: 1100px;
@@ -691,6 +736,9 @@ h6 {
 
 .c-footer > .o-wrapper {
   background-color: #767676; }
+
+.c-pledge {
+  border: 1px solid #333; }
 
 /*------------------------------------*    #Utilities (u-prefix)
     High-specificity, very explicit selectors. Overrides and helper classes (e.g. .u-hidden {})
