@@ -84,6 +84,7 @@ $o-box--small: true;
 
 $o-btn--pill: true;
 $o-btn--small: true;
+$o-btn--full: true;
 $o-btn-color: white;
 $o-btn-background: #4a8ec2;
 @import "node_modules/aleut.objects.buttons/_objects.buttons.scss";
@@ -133,7 +134,7 @@ $o-layout--auto:     false !default;
 @import "scss/components/_components.footer.scss";
 @import "scss/components/_components.tag-list.scss";
 @import "scss/components/_components.pledge.scss";
-
+@import "scss/components/_components.container.scss";
 
 //@import "scss/components/_components.header.scss";
 //@import "scss/components/_components.hero.scss";

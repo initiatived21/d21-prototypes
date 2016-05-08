@@ -675,6 +675,12 @@ h6 {
   /* [7] */ }
 
 /**
+     * Full-width buttons.
+     */
+.o-btn--full {
+  width: 100%; }
+
+/**
      * Round-ended buttons.
      *
      * 1. Overly-large value to ensure the radius rounds the whole end of the
@@ -842,6 +848,12 @@ h6 {
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.2; }
+
+.c-container {
+  border: 1px solid #333;
+  margin-bottom: 24px; }
+  .c-container input[type="text"], .c-container input[type="email"], .c-container textarea {
+    width: 100%; }
 
 /*------------------------------------*    #Utilities (u-prefix)
     High-specificity, very explicit selectors. Overrides and helper classes (e.g. .u-hidden {})

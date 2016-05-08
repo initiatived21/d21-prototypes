@@ -1,0 +1,10 @@
+
+.c-container {
+  border: 1px solid $text-color;
+
+  margin-bottom: $spacing;
+
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+  }
+}
