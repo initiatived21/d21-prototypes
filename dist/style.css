@@ -620,6 +620,70 @@ h6 {
 .o-box--small {
   padding: 12px; }
 
+/*------------------------------------*    #BUTTONS
+\*------------------------------------*/
+/**
+ * A simple button object.
+ */
+/**
+ * 1. Allow us to style box model properties.
+ * 2. Line different sized buttons up a little nicer.
+ * 3. Make buttons inherit font styles (often necessary when styling `input`s as
+ *    buttons).
+ * 4. Reset/normalize some styles.
+ * 5. Force all button-styled elements to appear clickable.
+ * 6. Fixes odd inner spacing in IE7.
+ * 7. Subtract the border size from the padding value so that buttons do not
+ *    grow larger as we add borders.
+ */
+.o-btn {
+  display: inline-block;
+  /* [1] */
+  vertical-align: middle;
+  /* [2] */
+  font: inherit;
+  /* [3] */
+  text-align: center;
+  /* [4] */
+  margin: 0;
+  /* [4] */
+  cursor: pointer;
+  /* [5] */
+  overflow: visible;
+  /* [6] */
+  padding: 11px 23px;
+  /* [7] */
+  background-color: #4a8ec2;
+  border: 1px solid #4a8ec2; }
+  .o-btn, .o-btn:hover, .o-btn:active, .o-btn:focus {
+    text-decoration: none;
+    /* [4] */
+    color: white; }
+
+/**
+ * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
+ */
+.o-btn::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+     * Small buttons.
+     */
+.o-btn--small {
+  padding: 5px 11px;
+  /* [7] */ }
+
+/**
+     * Round-ended buttons.
+     *
+     * 1. Overly-large value to ensure the radius rounds the whole end of the
+     *    button.
+     */
+.o-btn--pill {
+  border-radius: 100px;
+  /* [1] */ }
+
 /*------------------------------------*    #LAYOUT
 \*------------------------------------*/
 /**

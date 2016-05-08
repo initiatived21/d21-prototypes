@@ -81,7 +81,12 @@
 
 $o-box--small: true;
 @import "node_modules/aleut.objects.box/_objects.box.scss";
-//@import "node_modules/aleut.objects.buttons/_objects.buttons.scss";
+
+$o-btn--pill: true;
+$o-btn--small: true;
+$o-btn-color: white;
+$o-btn-background: #4a8ec2;
+@import "node_modules/aleut.objects.buttons/_objects.buttons.scss";
 //@import "node_modules/aleut.objects.flag/_objects.flag.scss";
 
 $o-layout--tiny:     false !default;
