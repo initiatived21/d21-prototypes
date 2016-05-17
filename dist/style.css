@@ -849,6 +849,28 @@ h6 {
   font-size: 1.25rem;
   line-height: 1.2; }
 
+.c-pledge-remaining {
+  border-radius: 100px;
+  color: white;
+  background-color: green;
+  padding-top: 7px;
+  height: 68px;
+  width: 68px;
+  text-align: center;
+  line-height: 0.85; }
+
+.c-pledge-remaining__number-of-days {
+  font-size: 30px;
+  font-size: 1.875rem; }
+
+.c-pledge-remaining__still {
+  font-size: 12px;
+  font-size: 0.75rem; }
+
+.c-pledge-remaining__days {
+  font-size: 12px;
+  font-size: 0.75rem; }
+
 .c-container {
   border: 1px solid #333;
   margin-bottom: 24px; }
