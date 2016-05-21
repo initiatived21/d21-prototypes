@@ -32,6 +32,10 @@ gulp.task('serve', function(done) {
   browserSync({
     server: {
       baseDir: 'dist'
+    },
+    port: 4000,
+    ui: {
+      port: 4001
     }
   });
   done();
