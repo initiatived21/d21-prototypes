@@ -1,12 +1,59 @@
 /*
  * 1. Show hand pointer if mouse is over an editable element.
+ * 2. Set color for input placeholder text.
  */
+
+$placeholder-color: gray;
+$input-empty-background: beige;
+$input-valid-background: palegreen;
 
 .c-input {
   p {
-    background-color: yellow;
-    min-height: 40px;
+    min-height: 24px;
     cursor: pointer; /* [1] */
     user-select: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  p, input {
+    padding: 0.25em;
+  }
+
+  ::-webkit-input-placeholder,
+  :-moz-placeholder,
+  ::-moz-placeholder,
+  :-ms-input-placeholder {
+    color: $placeholder-color; /* [2] */
+    opacity: 1; /* [2] */
+  }
+}
+
+.c-input--empty {
+  p {
+    color: $placeholder-color; /* [2] */
+
+    background-color: $input-empty-background;
+    &:hover {
+      background-color: darken($input-empty-background, 10%);
+    }
+  }
+}
+
+.c-input--valid {
+  p {
+    background-color: $input-valid-background;
+    &:hover {
+      background-color: darken($input-valid-background, 10%);
+    }
   }
 }
