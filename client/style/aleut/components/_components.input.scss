@@ -7,5 +7,6 @@
     background-color: yellow;
     min-height: 40px;
     cursor: pointer; /* [1] */
+    user-select: none;
   }
 }

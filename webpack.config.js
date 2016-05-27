@@ -1,4 +1,5 @@
-const Path = require('path');
+const resolve      = require('path').resolve;
+const autoprefixer = require('autoprefixer');
 
 const config = {
   entry: {
@@ -13,13 +14,13 @@ const config = {
     loaders: [{
       test: /\.scss$/,
       include: [
-        Path.resolve(process.cwd(), 'client/style')
+        resolve(process.cwd(), 'client/style')
       ],
-      loader: 'style!css!sass'
+      loader: 'style!css!postcss!sass'
     }, {
       test: /\.jsx?$/,
       include: [
-        Path.resolve(process.cwd(), 'client/js')
+        resolve(process.cwd(), 'client/js')
       ],
       loader: 'babel',
       query: {
@@ -31,6 +32,9 @@ const config = {
     extension: ['', '.js', '.jsx'],
     modulesDirectories: ['node_modules']
   },
+  postcss: function() {
+    return [autoprefixer({ browsers: ['last 2 versions'] })];
+  }
 };
 
 module.exports = config;
