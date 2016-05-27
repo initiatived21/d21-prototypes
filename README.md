@@ -1,14 +1,13 @@
 # User interface prototypes for the D21 project
 
-For the installation to work, you need to have Node.js installed. Also, you need to
-install the Gulp package globally:
-
-    $ sudo npm install -g gulpjs/gulp-cli
+For the installation to work, you need to have Node.js installed.
 
 Clone the repository, change into the project directory and install the node modules:
 
     $ npm install
 
-Finally, start the build which also starts up the development server:
+Finally, start the build:
 
-    $ gulp
+    $ npm start
+
+and load one of the HTML files in the 'public' directory.
