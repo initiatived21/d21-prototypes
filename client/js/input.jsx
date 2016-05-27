@@ -3,7 +3,8 @@ import React from 'react';
 const Input = React.createClass({
   getInitialState: function() {
     return {
-      edit_mode: false
+      edit_mode: false,
+      value: 'Test'
     };
   },
   enterEditMode: function() {
@@ -11,20 +12,30 @@ const Input = React.createClass({
       edit_mode: true
     });
   },
+  enterDisplayMode: function() {
+    this.setState({
+      edit_mode: false
+    })
+  },
+  componentDidUpdate: function(prevProps, prevState) {
+    if (this.myTextInput !== null) {
+      this.myTextInput.focus();
+    }
+  },
 
   render: function() {
     if (this.state.edit_mode) {
       return (
         <div>
-          <input type="text" defaultValue={this.props.value} />
+          <input ref={(ref) => this.myTextInput = ref} onBlur={this.enterDisplayMode} type="text" value={this.state.value} />
         </div>
       );
     }
     else {
       return (
-        <div>
-          <p onClick={this.enterEditMode()}>{this.props.value}</p>
-          <input style={{ display: 'none' }} type="text" defaultValue={this.props.value} />
+        <div className="c-input">
+          <p onClick={this.enterEditMode}>{this.state.value}</p>
+          <input style={{ display: 'none' }} type="text" value={this.state.value} />
         </div>
       );
     }

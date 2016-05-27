@@ -1,0 +1,11 @@
+/*
+ * 1. Show hand pointer if mouse is over an editable element.
+ */
+
+.c-input {
+  p {
+    background-color: yellow;
+    min-height: 40px;
+    cursor: pointer; /* [1] */
+  }
+}
