@@ -6,27 +6,29 @@
 $placeholder-color: gray;
 $input-empty-background: beige;
 $input-valid-background: palegreen;
+$input-invalid-background: mistyrose;
 
 .c-input {
-  p {
-    min-height: 24px;
+  display: inline-block;
+
+  span {
     cursor: pointer; /* [1] */
     user-select: none;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    margin: 0.25em 0;
+    border-top: 2px solid transparent;
   }
 
   input {
-    width: 100%;
-    background-color: transparent;
+    max-width: 100%;
+    transition: background-color 0.5s;
     border: none;
     padding: 0;
     margin: 0;
-  }
-
-  p, input {
-    padding: 0.25em;
+    height: 30px;
+    vertical-align: 1px;
   }
 
   ::-webkit-input-placeholder,
@@ -39,21 +41,43 @@ $input-valid-background: palegreen;
 }
 
 .c-input--empty {
-  p {
-    color: $placeholder-color; /* [2] */
-
+  input {
     background-color: $input-empty-background;
-    &:hover {
-      background-color: darken($input-empty-background, 10%);
-    }
+  }
+}
+
+.c-input--invalid {
+  input {
+    background-color: $input-invalid-background;
   }
 }
 
 .c-input--valid {
-  p {
-    background-color: $input-valid-background;
+  span {
     &:hover {
-      background-color: darken($input-valid-background, 10%);
+      background-color: darken($input-empty-background, 10%);
     }
+
+    border-bottom: 2px dotted gray;
   }
+
+  input {
+    background-color: $input-valid-background;
+  }
+}
+
+.c-input--pledge input {
+  width: 20em;
+}
+
+.c-input--howmany input {
+  width: 5em;
+}
+
+.c-input--who input {
+  width: 17em;
+}
+
+.c-input--what input {
+  width: 30em;
 }
