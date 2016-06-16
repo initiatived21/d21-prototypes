@@ -1,27 +1,15 @@
 import React from 'react';
 
 const GoogleplusButton = React.createClass({
-  handleClick: function(e) {
-    e.preventDefault();
-
-    const anchor = e.currentTarget;
-    const url = anchor.href;
-
-    const windowName = '_blank';
-    const windowSizeX = '600';
-    const windowSizeY = '460';
-    const windowSize = `width=${windowSizeX},height=${windowSizeY}`;
-
-    global.window.open(url, windowName, windowSize);
-  },
-
   render: function() {
+    const { url, handleClick } = this.props;
+
     return (
       <li>
         <a
           className="c-social-media__button c-social-media__button--googleplus"
-          href="https://plus.google.com/share?url=http://www.example.com"
-          onClick={this.handleClick}
+          href={`https://plus.google.com/share?url=${url}`}
+          onClick={handleClick}
         >
           <svg
             viewBox="0 0 16 16"
