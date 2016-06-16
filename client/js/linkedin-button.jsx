@@ -1,12 +1,27 @@
 import React from 'react';
 
 const LinkedinButton = React.createClass({
+  handleClick: function(e) {
+    e.preventDefault();
+
+    const anchor = e.currentTarget;
+    const url = anchor.href;
+
+    const windowName = '_blank';
+    const windowSizeX = '600';
+    const windowSizeY = '460';
+    const windowSize = `width=${windowSizeX},height=${windowSizeY}`;
+
+    global.window.open(url, windowName, windowSize);
+  },
+
   render: function() {
     return (
       <li>
         <a
           className="c-social-media__button c-social-media__button--linkedin"
           href="https://www.linkedin.com/cws/share?url=http://www.example.com"
+          onClick={this.handleClick}
         >
           <svg
             viewBox="0 0 16 16"
