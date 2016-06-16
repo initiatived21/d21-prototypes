@@ -1,0 +1,27 @@
+/*
+ *
+ */
+
+.c-social-media__button svg {
+  width: 48px;
+  height: 48px;
+  padding: 12px;
+  fill: #ccc;
+  background-color: transparent;
+}
+
+.c-social-media__button--facebook svg {
+  fill: #3B5998;
+}
+.c-social-media__button--twitter svg {
+  fill: #55ACEE;
+}
+.c-social-media__button--googleplus svg {
+  fill: #DC4E41;
+}
+.c-social-media__button--xing svg {
+  fill: #005A5F;
+}
+.c-social-media__button--linkedin svg {
+  fill: #0077B5;
+}
