@@ -2,6 +2,12 @@
  *
  */
 
+$color-facebook: #3B5998;
+$color-twitter: #55ACEE;
+$color-googleplus: #DC4E41;
+$color-xing: #005A5F;
+$color-linkedin: #0077B5;
+
 .c-social-media > li {
   display: inline-block;
   padding: $spacing--small;
@@ -19,17 +25,26 @@
 }
 
 .c-social-media__button--facebook > svg {
-  fill: #3B5998;
+  fill: $color-facebook;
+  &:hover { fill: lighten($color-facebook, 10%); }
 }
+
 .c-social-media__button--twitter > svg {
-  fill: #55ACEE;
+  fill: $color-twitter;
+  &:hover { fill: lighten($color-twitter, 10%); }
 }
+
 .c-social-media__button--googleplus > svg {
-  fill: #DC4E41;
+  fill: $color-googleplus;
+  &:hover { fill: lighten($color-googleplus, 10%); }
 }
+
 .c-social-media__button--xing > svg {
-  fill: #005A5F;
+  fill: $color-xing;
+  &:hover { fill: lighten($color-xing, 10%); }
 }
+
 .c-social-media__button--linkedin > svg {
-  fill: #0077B5;
+  fill: $color-linkedin;
+  &:hover { fill: lighten($color-linkedin, 10%); }
 }
