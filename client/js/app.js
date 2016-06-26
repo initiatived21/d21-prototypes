@@ -18,7 +18,7 @@ const el_social = document.getElementById('socialmedia');
 
 if (el_social) {
   ReactDOM.render(
-    <SocialMedia url="http://www.example.com" twitterText="Wir versprechen:" />,
+    <SocialMedia url="http://www.example.com" />,
     el_social
   );
 }

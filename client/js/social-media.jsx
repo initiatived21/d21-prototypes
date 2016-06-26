@@ -6,6 +6,13 @@ import XingButton from './xing-button.jsx';
 import LinkedinButton from './linkedin-button.jsx';
 
 const SocialMedia = React.createClass({
+  getDefaultProps: function() {
+    return {
+      url: global.document.location.href,
+      twitterText: 'Wir versprechen:'
+    };
+  },
+
   handleClick: function(e) {
     e.preventDefault();
 
@@ -20,12 +27,8 @@ const SocialMedia = React.createClass({
     global.window.open(url, windowName, windowSize);
   },
 
-  getUrl: function() {
-    return this.props.url || global.document.location.href;
-  },
-
   render: function() {
-    const url = this.getUrl();
+    const url = this.props.url;
     const twitterText = encodeURIComponent(this.props.twitterText);
 
     return (
