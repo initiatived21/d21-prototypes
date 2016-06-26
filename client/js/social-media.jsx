@@ -6,6 +6,11 @@ import XingButton from './xing-button.jsx';
 import LinkedinButton from './linkedin-button.jsx';
 
 const SocialMedia = React.createClass({
+  propTypes: {
+    url: React.PropTypes.string,
+    twitterText: React.PropTypes.string
+  },
+
   getDefaultProps: function() {
     return {
       url: global.document.location.href,
