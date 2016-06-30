@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GoogleplusButton = React.createClass({
+export default React.createClass({
   render: function() {
     const { url, handleClick } = this.props;
 
@@ -28,5 +28,3 @@ const GoogleplusButton = React.createClass({
     );
   }
 });
-
-export default GoogleplusButton;

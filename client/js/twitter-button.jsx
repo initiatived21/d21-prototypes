@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TwitterButton = React.createClass({
+export default React.createClass({
   render: function() {
     const { url, handleClick } = this.props;
 
@@ -26,5 +26,3 @@ const TwitterButton = React.createClass({
     );
   }
 });
-
-export default TwitterButton;

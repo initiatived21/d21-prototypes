@@ -5,7 +5,7 @@ import GoogleplusButton from './googleplus-button.jsx';
 import XingButton from './xing-button.jsx';
 import LinkedinButton from './linkedin-button.jsx';
 
-const SocialMedia = React.createClass({
+export default React.createClass({
   propTypes: {
     url: React.PropTypes.string,
     twitterText: React.PropTypes.string
@@ -47,5 +47,3 @@ const SocialMedia = React.createClass({
     );
   }
 });
-
-export default SocialMedia;
