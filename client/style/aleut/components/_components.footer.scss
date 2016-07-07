@@ -1,12 +1,19 @@
 
-$text-color: rgba(60, 60, 60, 1);
+$text-color: rgb(60, 60, 60);
 
-$footer-background-color: rgba(243, 243, 243, 1);
-$footer-separator-color: rgba(242, 145, 0, 1);
+$footer-background-color: rgb(243, 243, 243);
+$footer-separator-color: rgb(242, 145, 0);
 
 $footer-separator-thickness: 2px;
 $footer-spacing-top: 80px;
 $footer-spacing-bottom: 66px;
+$footer-spacing-below-icons: 34px;
+
+$svg-size: 32px;
+$svg-margin: 8px;
+
+$svg-icon-size: 50px;
+$svg-icon-border-size: 1px;
 
 
 .c-footer {
@@ -29,20 +36,20 @@ $footer-spacing-bottom: 66px;
 }
 
 .c-footer svg {
-  width: 35px;
-  height: 35px;
+  width: $svg-size;
+  height: $svg-size;
 
-  margin: 6.5px;
+  margin: $svg-margin;
 
   fill: $text-color;
 }
 
 .c-footer i {
-  width: 49px;
-  height: 49px;
+  width: $svg-icon-size;
+  height: $svg-icon-size;
   display: inline-block;
-  border: 1px solid;
-  border-radius: 50px;
+  border: $svg-icon-border-size solid;
+  border-radius: $svg-icon-size/2;
 
-  margin-bottom: 34px;
+  margin-bottom: $footer-spacing-below-icons;
 }
