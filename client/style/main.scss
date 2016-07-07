@@ -108,6 +108,8 @@ $o-layout--auto:     false !default;
 
 @import "~aleut.objects.list-inline/_objects.list-inline";
 //@import "~aleut.objects.list-ui/_objects.list-ui";
+
+$o-media--small: true;
 @import "~aleut.objects.media/_objects.media";
 //@import "~aleut.objects.pack/_objects.pack.scss";
 //@import "~aleut.objects.tables/_objects.tables.scss";
@@ -134,7 +136,6 @@ $o-layout--auto:     false !default;
 @import "aleut/components/_components.footer.scss";
 @import "aleut/components/_components.tag-list.scss";
 @import "aleut/components/_components.pledge.scss";
-@import "aleut/components/_components.pledge-remaining.scss";
 @import "aleut/components/_components.container.scss";
 @import "aleut/components/_components.input.scss";
 @import "aleut/components/_components.pledge-form.scss";

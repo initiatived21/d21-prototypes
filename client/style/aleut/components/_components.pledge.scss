@@ -1,15 +1,48 @@
 
+$pledge-tile-darkgray: rgb(29%, 29%, 29%);
+
+$pledge-tile-border-color: rgb(70%, 70%, 70%);
+
+$pledge-tile-gray: rgb(60%, 60%, 60%);
+
+$pledge-tile-lightgray: rgb(85%, 85%, 85%);
+
+$pledge-tile-black: rgb(0%, 0%, 0%);
+
+$pledge-tile-success-color: rgb(47%, 60%, 69%);
+
+
 .c-pledge {
-  border: 1px solid $text-color;
+  border: 1px solid $pledge-tile-border-color;
+  border-radius: 8px;
 }
 
 .c-pledge__initiator-title {
   text-transform: uppercase;
+  color: $pledge-tile-gray;
+  @include font-size(14px);
 }
 
 .c-pledge__initiator-name {
-  text-transform: uppercase;
+  @include font-size(18px);
 }
+
+.c-pledge__title {
+  @include font-size(22px);
+  color: $pledge-tile-black;
+  text-align: center;
+
+  border-top: 2px solid $pledge-tile-gray;
+  border-bottom: 2px solid $pledge-tile-gray;
+
+  padding-top: $spacing--small;
+  padding-bottom: $spacing--small;
+
+  margin-top: $spacing--small;
+  margin-bottom: $spacing--small;
+}
+
+
 
 .c-pledge__text {
   color: $gray;
@@ -27,4 +60,47 @@
 .c-pledge__days {
   color: #c00;
   @include font-size(20px);
+}
+
+.c-progress-bar {
+  width: 100%;
+  height: 17px;
+  background-color: $pledge-tile-lightgray;
+  border-radius: 10px;
+  overflow: hidden; /* So that border-radius applies also to the fill */
+  margin-top: $spacing--small;
+}
+
+.c-progress-bar__fill {
+  height: 17px;
+  background-color: $pledge-tile-success-color;
+}
+
+
+.c-pledge-remaining {
+  border-radius: 100px;
+  padding-top: 9px;
+  height: 89px;
+  width: 89px;
+  text-align: center;
+  line-height: 0.95;
+  border: 1px solid $pledge-tile-gray;
+}
+
+.c-pledge-remaining__number-of-days {
+  @include font-size(40px, none);
+}
+
+.c-pledge-remaining__still {
+  @include font-size(15px, none);
+  color: $pledge-tile-darkgray;
+}
+
+.c-pledge-remaining__days {
+  @include font-size(15px, none);
+  color: $pledge-tile-darkgray;
+}
+
+.c-pledge__signees {
+  padding-top: $spacing--tiny;
 }
