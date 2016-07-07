@@ -23,7 +23,7 @@
 @import "aleut/_settings.vars.scss"; //here we override some of the variables down the line
 @import "~aleut.settings.defaults/_settings.defaults.scss";
 @import "~aleut.settings.responsive/_settings.responsive.scss";
-//@import "scss/_settings.fonts.scss";
+@import "aleut/settings.fonts";
 //++ our own remaps of inuits variables
 
 
@@ -104,7 +104,9 @@ $o-layout--auto:     false !default;
 
 @import "~aleut.objects.layout/_objects.layout.scss";
 @import "~aleut.objects.list-bare/_objects.list-bare";
-//@import "~aleut.objects.list-block/_objects.list-block";
+
+
+@import "~aleut.objects.list-block/_objects.list-block";
 
 @import "~aleut.objects.list-inline/_objects.list-inline";
 //@import "~aleut.objects.list-ui/_objects.list-ui";

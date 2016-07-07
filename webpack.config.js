@@ -11,22 +11,29 @@ const config = {
   },
   devtool: 'source-map',
   module: {
-    loaders: [{
-      test: /\.scss$/,
-      include: [
-        resolve(process.cwd(), 'client/style')
-      ],
-      loader: 'style!css!postcss!sass'
-    }, {
-      test: /\.jsx?$/,
-      include: [
-        resolve(process.cwd(), 'client/js')
-      ],
-      loader: 'babel',
-      query: {
-        presets: ['es2015', 'react']
+    loaders: [
+      {
+        test: /\.scss$/,
+        include: [
+          resolve(process.cwd(), 'client/style')
+        ],
+        loader: 'style!css!postcss!sass'
+      },
+      {
+        test: /\.jsx?$/,
+        include: [
+          resolve(process.cwd(), 'client/js')
+        ],
+        loader: 'babel',
+        query: {
+          presets: ['es2015', 'react']
+        }
+      },
+      {
+        test: /\.woff$/,
+        loader: 'url?limit=65000&mimetype=application/font-woff&name=fonts/[name].[ext]'
       }
-    }]
+    ]
   },
   resolve: {
     extension: ['', '.js', '.jsx'],
