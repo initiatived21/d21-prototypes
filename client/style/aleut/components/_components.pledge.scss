@@ -12,6 +12,7 @@ $pledge-tile-black: rgb(0%, 0%, 0%);
 $pledge-tile-success-color: rgb(47%, 60%, 69%);
 
 
+
 .c-pledge {
   border: 1px solid $pledge-tile-border-color;
   border-radius: 8px;
@@ -47,8 +48,6 @@ $pledge-tile-success-color: rgb(47%, 60%, 69%);
 
 
 .c-pledge__text {
-  color: $gray;
-  font-weight: bold;
 
   &:before {
     content: open-quote;

@@ -77,7 +77,8 @@
     https://github.com/aleutcss?query=objects.
 \*------------------------------------*/
 
-//@import "~aleut.objects.block/_objects.block.scss";
+$o-block--center: true;
+@import "~aleut.objects.block/_objects.block.scss";
 
 $o-box--small: true;
 @import "~aleut.objects.box/_objects.box.scss";
@@ -85,8 +86,6 @@ $o-box--small: true;
 $o-btn--pill: true;
 $o-btn--small: true;
 $o-btn--full: true;
-$o-btn-color: white;
-$o-btn-background: #4a8ec2;
 @import "~aleut.objects.buttons/_objects.buttons.scss";
 //@import "~aleut.objects.flag/_objects.flag.scss";
 
@@ -105,8 +104,7 @@ $o-layout--auto:     false !default;
 @import "~aleut.objects.layout/_objects.layout.scss";
 @import "~aleut.objects.list-bare/_objects.list-bare";
 
-
-@import "~aleut.objects.list-block/_objects.list-block";
+//@import "~aleut.objects.list-block/_objects.list-block";
 
 @import "~aleut.objects.list-inline/_objects.list-inline";
 //@import "~aleut.objects.list-ui/_objects.list-ui";
@@ -118,6 +116,7 @@ $o-media--small: true;
 //@import "~aleut.objects.tabs/_objects.tabs.scss";
 
 @import "aleut/objects/_objects.wrapper.scss";
+@import "aleut/objects/_objects.flipper.scss";
 
 /*------------------------------------*\
     #VENDOR
@@ -144,6 +143,7 @@ $o-media--small: true;
 @import "aleut/components/_components.social-media.scss";
 @import "aleut/components/_components.drop-zone.scss";
 @import "aleut/components/_components.flipper.scss";
+@import "aleut/components/_components.btn.scss";
 
 
 /*------------------------------------*\
