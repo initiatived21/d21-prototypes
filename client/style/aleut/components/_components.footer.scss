@@ -1,7 +1,48 @@
 
+$text-color: rgba(60, 60, 60, 1);
+
+$footer-background-color: rgba(243, 243, 243, 1);
+$footer-separator-color: rgba(242, 145, 0, 1);
+
+$footer-separator-thickness: 2px;
+$footer-spacing-top: 80px;
+$footer-spacing-bottom: 66px;
+
+
 .c-footer {
+  background-color: $footer-background-color;
+
+  border-top: $footer-separator-thickness solid $footer-separator-color;
+
+  padding-top: $footer-spacing-top;
+  padding-bottom: $footer-spacing-bottom;
+
+  color: $text-color;
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+  }
 }
 
 .c-footer > .o-wrapper {
-  background-color: $gray;
+}
+
+.c-footer svg {
+  width: 35px;
+  height: 35px;
+
+  margin: 6.5px;
+
+  fill: $text-color;
+}
+
+.c-footer i {
+  width: 49px;
+  height: 49px;
+  display: inline-block;
+  border: 1px solid;
+  border-radius: 50px;
+
+  margin-bottom: 34px;
 }
