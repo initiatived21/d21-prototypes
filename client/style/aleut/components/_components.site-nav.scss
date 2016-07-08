@@ -1,5 +1,10 @@
 
+$site-nav-color: rgb(12%, 44%, 72%);
+
 .c-site-nav {
+  font-size: 1.2em;
+
+  margin-top: $spacing;
 
 }
 
@@ -8,8 +13,29 @@
 }
 
 .c-site-nav__link {
-  color: $text-color;
-  padding-left: $spacing--small;
-  padding-right: $spacing--small;
+  display: inline-block;
   text-decoration: none;
+  padding: $spacing--small;
+
+  color: $site-nav-color;
+  background-color: white;
+
+  &:hover {
+    color: lighten($site-nav-color, 5%);
+  }
+
+  user-select: none;
+}
+
+.c-site-nav__item--active span {
+  display: inline-block;
+  padding: $spacing--small;
+
+  background-color: $site-nav-color;
+  color: white;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  user-select: none;
 }
