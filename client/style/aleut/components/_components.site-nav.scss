@@ -2,7 +2,8 @@
 $site-nav-color: rgb(12%, 44%, 72%);
 
 .c-site-nav {
-  font-size: 1.2em;
+  font-size: 1.25em;
+  font-family: Colaborate;
 
   margin-top: $spacing;
 
@@ -15,13 +16,13 @@ $site-nav-color: rgb(12%, 44%, 72%);
 .c-site-nav__link {
   display: inline-block;
   text-decoration: none;
-  padding: $spacing--small;
+  padding: 10px 20px;
 
   color: $site-nav-color;
   background-color: white;
 
   &:hover {
-    color: lighten($site-nav-color, 5%);
+    text-decoration: underline;
   }
 
   user-select: none;
@@ -29,7 +30,7 @@ $site-nav-color: rgb(12%, 44%, 72%);
 
 .c-site-nav__item--active span {
   display: inline-block;
-  padding: $spacing--small;
+  padding: 10px 20px;
 
   background-color: $site-nav-color;
   color: white;

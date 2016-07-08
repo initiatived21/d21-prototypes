@@ -1,0 +1,25 @@
+
+$site-nav-color: rgb(0%, 0%, 0%);
+
+.c-site-nav2 {
+  text-align: right;
+}
+
+.c-site-nav2__item {
+
+}
+
+.c-site-nav2__link {
+  display: inline-block;
+  text-decoration: none;
+  padding: $spacing--tiny;
+
+  color: $site-nav-color;
+  background-color: white;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  user-select: none;
+}

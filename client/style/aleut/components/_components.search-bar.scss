@@ -1,0 +1,45 @@
+
+.c-search-bar {
+
+  .c-social-media {
+    display: inline-block;
+  }
+}
+
+.c-search-bar__form {
+  display: inline-block;
+
+  vertical-align: top;
+}
+
+.c-search-bar__input {
+  border: 1px solid #999;
+  border-radius: 5px;
+
+  width: 20em;
+  height: 40px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+}
+
+.c-search-bar__button {
+  height: 40px;
+  width: 4em;
+
+  background-color: rgb(12%, 44%, 72%);
+
+  border: none;
+  border-radius: 5px;
+
+  svg {
+    fill: white;
+  }
+}
+
+.c-search-bar:after {
+    content:"";
+    display:table;
+    clear:both;
+}

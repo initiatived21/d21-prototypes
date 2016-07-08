@@ -134,6 +134,7 @@ $o-media--small: true;
 \*------------------------------------*/
 
 @import "aleut/components/_components.site-nav.scss";
+@import "aleut/components/_components.site-nav2.scss";
 @import "aleut/components/_components.footer.scss";
 @import "aleut/components/_components.tag-list.scss";
 @import "aleut/components/_components.pledge.scss";
@@ -144,6 +145,7 @@ $o-media--small: true;
 @import "aleut/components/_components.drop-zone.scss";
 @import "aleut/components/_components.flipper.scss";
 @import "aleut/components/_components.btn.scss";
+@import "aleut/components/_components.search-bar.scss";
 
 
 /*------------------------------------*\
@@ -155,7 +157,10 @@ $o-media--small: true;
 @import "~aleut.utilities.clearfix/_utilities.clearfix.scss";
 @import "~aleut.utilities.headings/_utilities.headings.scss";
 @import "~aleut.utilities.print/_utilities.print.scss";
+
 $u-p: true;
+$u-m: true;
+$u-m-small: true;
 @import "~aleut.utilities.spacing/_utilities.spacing.scss";
 @import "~aleut.utilities.spacing-responsive/_utilities.spacing-responsive.scss";
 @import "~aleut.utilities.widths/_utilities.widths.scss";
