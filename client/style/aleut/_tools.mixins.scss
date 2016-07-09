@@ -26,5 +26,12 @@
     &:-ms-input-placeholder { /* Internet Explorer 10+ */
         color: $placeholderContent;
     }
+}
 
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }

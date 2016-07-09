@@ -106,6 +106,8 @@ $o-layout--auto:     false !default;
 
 //@import "~aleut.objects.list-block/_objects.list-block";
 
+$o-list-inline--delimited: true;
+$o-list-inline-delimit-character: "\00A0|";
 @import "~aleut.objects.list-inline/_objects.list-inline";
 //@import "~aleut.objects.list-ui/_objects.list-ui";
 
@@ -136,6 +138,7 @@ $o-media--small: true;
 @import "aleut/components/_components.site-nav.scss";
 @import "aleut/components/_components.site-nav2.scss";
 @import "aleut/components/_components.footer.scss";
+@import "aleut/components/_components.page-head.scss";
 @import "aleut/components/_components.tag-list.scss";
 @import "aleut/components/_components.pledge.scss";
 @import "aleut/components/_components.container.scss";

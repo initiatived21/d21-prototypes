@@ -1,6 +1,5 @@
 
 .c-search-bar {
-
   .c-social-media {
     display: inline-block;
   }
@@ -36,10 +35,4 @@
   svg {
     fill: white;
   }
-}
-
-.c-search-bar:after {
-    content:"";
-    display:table;
-    clear:both;
 }
