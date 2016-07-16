@@ -1,0 +1,15 @@
+
+.c-report-box {
+  margin-bottom: $spacing;
+
+  border: 1px solid rgb(179, 179, 179);
+  border-radius: 5px;
+
+  color: rgb(60, 60, 60);
+  background-color: rgb(245, 245, 245);
+
+  .o-btn {
+    background-color: rgb(151, 151, 151);
+    border-color: rgb(151, 151, 151);
+  }
+}
