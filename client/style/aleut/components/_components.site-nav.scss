@@ -3,7 +3,7 @@ $site-nav-color: rgb(12%, 44%, 72%);
 
 .c-site-nav {
   font-size: 1.25em;
-  font-family: Colaborate;
+  //font-family: Colaborate;
 
   margin-top: $spacing;
 
@@ -39,4 +39,13 @@ $site-nav-color: rgb(12%, 44%, 72%);
   border-top-right-radius: 5px;
 
   user-select: none;
+}
+
+.c-site-nav--mobile {
+  margin-top: 0;
+  font-size: 0.85em;
+
+  .c-site-nav__link {
+    padding: 6px 6px;
+  }
 }
