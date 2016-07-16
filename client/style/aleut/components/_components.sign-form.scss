@@ -1,0 +1,68 @@
+/*
+ */
+
+$text-color: rgb(60, 60, 60);
+$secondary-color: rgb(182, 15, 12);
+$white: rgb(255, 255, 255);
+$gray: rgb(60%, 60%, 60%);
+
+.c-sign-form {
+  font-family: "DejaVu Sans", sans-serif;
+
+  color: $text-color;
+  border: 2px solid $secondary-color;
+  border-radius: 5px;
+  margin-bottom: $spacing;
+
+  input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: $spacing--tiny;
+    border: 1px solid $gray;
+    border-radius: 5px;
+  }
+
+  input[type="text"], input[type="email"] {
+    height: 40px;
+  }
+
+  input[type="checkbox"] {
+    width: 26px;
+    height: 26px;
+    border: 1px solid $gray;
+    border-radius: 20px;
+    background-color: transparent;
+  }
+
+  .o-btn {
+    @include font-size(24px, 1.5);
+    border-color: $secondary-color;
+    background-color: $secondary-color;
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.c-sign-form__title {
+  padding: $spacing--small $spacing;
+  @include font-size(22px, 1.5);
+  font-weight: normal;
+  color: $white;
+  background-color: $secondary-color;
+
+  user-select: none;
+}
+
+.c-sign-form__wrapper {
+  margin: $spacing--small $spacing $spacing;
+}
+
+.c-sign-form__input, .c-sign-form__checkbox {
+  margin-bottom: $spacing--tiny;
+}
+
+.c-sign-form__small-print {
+  @include font-size(12px, 1.5);
+}
