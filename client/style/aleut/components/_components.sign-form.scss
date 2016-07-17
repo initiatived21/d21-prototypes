@@ -19,6 +19,7 @@ $gray: rgb(60%, 60%, 60%);
     padding: $spacing--tiny;
     border: 1px solid $gray;
     border-radius: 5px;
+    background-color: transparent;
   }
 
   input[type="text"], input[type="email"] {
@@ -60,7 +61,7 @@ $gray: rgb(60%, 60%, 60%);
 }
 
 .c-sign-form__input, .c-sign-form__checkbox {
-  margin-bottom: $spacing--tiny;
+  margin-bottom: $spacing--small;
 }
 
 .c-sign-form__small-print {
