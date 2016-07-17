@@ -1,0 +1,23 @@
+
+.c-pledge-input {
+  border: 2px solid $primary-color;
+  border-radius: 8px;
+
+  padding: $spacing--small;
+
+  span {
+    @include font-size(20px, 1.5);
+    font-weight: bold;
+
+    color: $primary-color;
+  }
+}
+
+.c-pledge-input__input {
+  padding: $spacing--tiny;
+  border: 1px solid $gray;
+  border-radius: 5px;
+  background-color: transparent;
+  height: 40px;
+}
+

@@ -1,0 +1,58 @@
+/*
+ */
+
+$text-color: rgb(60, 60, 60);
+$secondary-color: rgb(182, 15, 12);
+$white: rgb(255, 255, 255);
+$gray: rgb(60%, 60%, 60%);
+
+.c-help {
+  font-family: "DejaVu Sans", sans-serif;
+
+  color: $text-color;
+  border: 1px solid $primary-color-lighter;
+  border-radius: 5px;
+  margin-bottom: $spacing;
+
+}
+
+.c-help__title {
+  padding: $spacing--small $spacing;
+  @include font-size(22px, 1.5);
+  font-weight: normal;
+  color: $white;
+  background-color: $primary-color-lighter;
+
+  user-select: none;
+}
+
+.c-help__wrapper {
+  margin: $spacing--small $spacing $spacing;
+}
+
+.c-help__subheading {
+  margin-top: $spacing;
+  @include font-size(16px, 1.5);
+}
+
+.c-help__faq {
+  svg {
+    margin-top: 2px;
+    margin-left: -17px !important;
+    margin-right: -10px !important;
+    fill: $primary-color;
+
+    width: 55px;
+    height: 55px;
+  }
+
+  h3 {
+    @include font-size(18px, 1.5);
+    font-weight: normal;
+    color: $primary-color;
+  }
+
+  a {
+    color: $text-color;
+  }
+}

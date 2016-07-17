@@ -1,0 +1,63 @@
+/*
+ */
+
+.c-sign-up {
+  font-family: "DejaVu Sans", sans-serif;
+
+  color: $text-color;
+
+  margin-top: $spacing--large;
+  margin-bottom: $spacing;
+
+  h2 {
+    @include font-size(24px, 1.5);
+    font-weight: normal;
+    color: $secondary-color;
+  }
+
+  a {
+    color: $text-color;
+    text-decoration: underline;
+  }
+
+  label {
+    display: inline-block;
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    padding: $spacing--tiny;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+
+  input[type="text"], input[type="email"] {
+    height: 40px;
+  }
+
+  input[type="checkbox"] {
+    width: 26px;
+    height: 26px;
+    border: 1px solid $gray;
+    border-radius: 20px;
+    background-color: transparent;
+  }
+
+  .o-btn {
+    svg {
+      width: 20px;
+      height: 20px;
+      vertical-align: -3px;
+    }
+  }
+}
+
+.c-sign-up__save-draft {
+  border-color: $primary-color;
+  background-color: $primary-color;
+}
+
+.c-sign-up__preview {
+  border-color: $secondary-color;
+  background-color: $secondary-color;
+}

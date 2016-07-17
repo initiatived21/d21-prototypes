@@ -1,0 +1,66 @@
+/*
+ */
+
+$text-color: rgb(60, 60, 60);
+$secondary-color: rgb(182, 15, 12);
+$white: rgb(255, 255, 255);
+$gray: rgb(60%, 60%, 60%);
+
+.c-submit-pledge {
+  font-family: "DejaVu Sans", sans-serif;
+
+  color: $text-color;
+
+  padding-bottom: $spacing;
+  border-bottom: 1px solid $light-gray;
+  margin-bottom: $spacing;
+
+  h1 {
+    @include font-size(36px, 1.5);
+    font-weight: normal;
+    color: $secondary-color;
+  }
+
+  a {
+    color: $text-color;
+    text-decoration: underline;
+  }
+
+  label {
+    display: inline-block;
+  }
+
+  input[type="text"], input[type="email"], textarea {
+    padding: $spacing--tiny;
+    border: 1px solid $gray;
+    border-radius: 5px;
+    background-color: transparent;
+  }
+
+  input[type="text"], input[type="email"] {
+    height: 40px;
+  }
+
+  input[type="checkbox"] {
+    width: 26px;
+    height: 26px;
+    border: 1px solid $gray;
+    border-radius: 20px;
+    background-color: transparent;
+  }
+
+  .o-btn {
+    @include font-size(24px, 1.5);
+    border-color: $secondary-color;
+    background-color: $secondary-color;
+
+    svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.c-text-input {
+  margin-bottom: $spacing--small;
+}
