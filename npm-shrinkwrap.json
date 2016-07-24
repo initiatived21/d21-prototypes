@@ -2164,6 +2164,11 @@
       "from": "react-dropzone@latest",
       "resolved": "https://registry.npmjs.org/react-dropzone/-/react-dropzone-3.5.1.tgz"
     },
+    "react-image-crop": {
+      "version": "1.0.0-rc5",
+      "from": "react-image-crop@latest",
+      "resolved": "https://registry.npmjs.org/react-image-crop/-/react-image-crop-1.0.0-rc5.tgz"
+    },
     "read-pkg": {
       "version": "1.1.0",
       "from": "read-pkg@>=1.0.0 <2.0.0",

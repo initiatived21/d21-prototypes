@@ -6,11 +6,13 @@ import PledgeForm from './pledge-form.jsx';
 import SocialMedia from './social-media.jsx';
 import DropzoneDemo from './drop-zone-demo.jsx';
 import ImageUpload from './image-upload.jsx';
+import ImageCrop from './image-crop.jsx'
 
 const el_app = document.getElementById('app');
 const el_social = document.getElementById('socialmedia');
 const el_drop_zone = document.getElementById('drop-zone');
 const el_image_upload = document.getElementById('image-upload');
+const el_image_crop = document.getElementById('image-crop');
 
 if (el_app) {
   ReactDOM.render(
@@ -38,4 +40,11 @@ if (el_image_upload) {
     <ImageUpload />,
     el_image_upload
   );
+}
+
+if (el_image_crop) {
+  ReactDOM.render(
+    <ImageCrop />,
+    el_image_crop
+  )
 }
