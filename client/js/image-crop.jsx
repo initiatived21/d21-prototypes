@@ -7,6 +7,10 @@ export default class ImageCrop extends React.Component {
     this.state = {}
   }
 
+  onComplete(crop) {
+    console.log(crop)
+  }
+
   render() {
     const crop = {
       x: 0,
@@ -22,6 +26,7 @@ export default class ImageCrop extends React.Component {
         minWidth={30}
         minHeight={30}
         keepSelection
+        onComplete={this.onComplete}
       />
     )
   }
