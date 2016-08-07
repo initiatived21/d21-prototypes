@@ -1,15 +1,19 @@
 /* entire container, keeps perspective */
 .flip-container {
   perspective: 1000px;
-  width: 50%;
+  width: 100%;
 }
   /* flip the pane when hovered */
   .flip-container:hover .flipper {
     transform: rotateY(180deg);
   }
 
+.flip-container--fixed-width {
+  width: 400px;
+}
+
 .flip-container, .front, .back {
-  height: 480px;
+  height: 400px;
 }
 
 /* flip speed goes here */
@@ -32,12 +36,12 @@
   /* for firefox 31 */
   transform: rotateY(0deg);
 
-  background-color: red;
+  //background-color: red;
 }
 
 /* back, initially hidden pane */
 .back {
   transform: rotateY(180deg);
 
-  background-color: yellow;
+  //background-color: yellow;
 }

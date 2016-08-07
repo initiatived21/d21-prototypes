@@ -568,7 +568,8 @@
       "dependencies": {
         "path-exists": {
           "version": "1.0.0",
-          "from": "path-exists@>=1.0.0 <2.0.0"
+          "from": "path-exists@1.0.0",
+          "resolved": "https://registry.npmjs.org/path-exists/-/path-exists-1.0.0.tgz"
         }
       }
     },
@@ -2625,7 +2626,8 @@
       "dependencies": {
         "supports-color": {
           "version": "3.1.2",
-          "from": "supports-color@>=3.1.0 <4.0.0"
+          "from": "supports-color@3.1.2",
+          "resolved": "https://registry.npmjs.org/supports-color/-/supports-color-3.1.2.tgz"
         }
       }
     },
